@@ -89,7 +89,7 @@ function App() {
             >
               <div className="card-header">
                 <span className="inv-id">{inv.id}</span>
-                <span className={`badge badge-${inv.status.toLowerCase().replace(' 🚀', '')}`}>
+                <span className={`badge badge-${inv.status.toLowerCase().replace(' ', '')}`}>
                   {inv.status === 'Pendiente' && <Clock size={14} />}
                   {inv.status === 'Procesando' && <Loader2 className="spinner" size={14} />}
                   {inv.status.includes('Enviado') && <CheckCircle size={14} />}
